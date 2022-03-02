@@ -1,0 +1,28 @@
+A=[]
+m=int(input('rows'))
+n=int(input('columns'))
+for i in  range(m):
+    row=[]
+    for j in range(n):
+        k=int(input())
+        row.append(k)
+    A.append(row)
+print(A)
+B=[]
+m=int(input('rows'))
+n=int(input('columns'))
+for i in range(m):
+    row=[]
+    for j in range(n):
+        k=int(input())
+        row.append(k)
+    B.append(row)
+print(B)
+result=[[0,0],[0,0]]
+for i in range(m):
+    for j in range(n):
+        result[i][j]=A[i][j]-B[i][j]
+print('resultant matrix is')
+for i in range(m):
+    for j in range(n):
+        print(result[i][j])
